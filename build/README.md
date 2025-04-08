@@ -1,1 +1,0 @@
-The game will be testable in this folder

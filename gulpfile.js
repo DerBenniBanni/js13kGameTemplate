@@ -86,7 +86,14 @@ gulp.task('zip', () => {
         }));
 });
 
+gulp.task('directories', function () {
+    return gulp.src('*.*', {read: false})
+        .pipe(gulp.dest('./build'))
+        .pipe(gulp.dest('./dist'));
+});
+
 gulp.task('default', gulp.series(
+    'directories',
     'webpackJS',
     roadRollJs,
     'buildHTML',

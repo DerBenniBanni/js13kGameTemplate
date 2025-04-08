@@ -8,6 +8,7 @@
   },
   "author": "Christoph Schansky",
   "license": "ISC",
+  "type": "module",
   "devDependencies": {
     "gulp": "^5.0.0",
     "gulp-check-filesize": "^2.0.1",
