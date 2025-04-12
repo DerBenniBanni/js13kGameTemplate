@@ -4,6 +4,7 @@ import Player from "./game/objects/player.js";
 import config from "./config.js"; 
 import registerKeys from "./game/input/keyboard.js";
 import registerMouseEvents from "./game/input/pointer.js";
+import Bush from "./game/objects/obstacles/bush.js";
 
 document.addEventListener("DOMContentLoaded", () => {
     const canvas = document.getElementById("mainCanvas");
@@ -18,6 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const level1 = game.addScene(new Scene("level1", game));
     level1.setup((scene) => {
         scene.addObject(new Player(scene, {x: 50, y: 50, width: 50, height: 50, color: '#0ff'}));
+        scene.addObject(new Bush(scene, {x: 350, y: 550, r:20, color: '#0f0'}));
     });
     level1.initialize();
     

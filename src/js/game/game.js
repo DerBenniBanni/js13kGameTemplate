@@ -11,6 +11,7 @@ export default class Game {
         this.scenes = []; // Array to hold scenes
         this.currentScene = null; // Current active scene
 
+
         this.keys = {}; // Object to hold key states
         this.actions = []; // Array to hold game actions
         this.actionChecks = []; //Array to hold methods that check for the action state

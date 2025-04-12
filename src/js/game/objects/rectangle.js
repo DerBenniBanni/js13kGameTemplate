@@ -7,6 +7,7 @@ export default class Rectangle extends GameObject {
         this.width = width; // Width of the rectangle
         this.height = height; // Height of the rectangle
         this.color = '#aaa';
+        this.colliderType = "rectangle"; // Type of collider for the rectangle
     }
 
     update(deltaTime) {
